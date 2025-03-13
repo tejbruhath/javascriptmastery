@@ -112,3 +112,22 @@ function updateProgressBar() {
     let progress = (scrollTop/scrollHeight)*100;
     document.getElementById(`scroll-bar`).style.width = progress +"%";
 }
+
+document.querySelectorAll(".ripple-btn").forEach(button => {
+    button.addEventListener("click",function(e){
+        let x = e.clientX - this.getBoundingClientRect().left;
+        let y = e.clientY - this.getBoundingClientRect().top;
+
+        let ripple = document.createElement("span")
+        ripple.classList.add('ripple')
+        ripple.style.left = `${x}px`
+        ripple.style.top = `${y}px`
+
+        this.appendChild(ripple)
+
+        setTimeout(()=> {
+            ripple.remove()
+        },600)
+
+    })
+})

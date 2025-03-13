@@ -267,7 +267,7 @@ h1:hover::after{
         background-position: 0% 50%;
     }
 }
-#cool-btn{
+.ripple-btn{
     margin: 10px 2px;
     position: relative;
     overflow: hidden;
@@ -279,8 +279,9 @@ h1:hover::after{
     border-radius: 5px;
 }
 
-#cool-btn::after{
-    content:'';
+
+
+.ripple{
     position: absolute;
     width: 100px;
     height: 100px;
