@@ -252,7 +252,7 @@ h1:hover::after{
 .animated-bg{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg,#f84545,#f8b45a,#5537ff,#d001ff);
+    background: linear-gradient(45deg,#ffffff,#96fcb4,#7e68fc,#ff7189);
     background-size: 200% 200%;
     animation: gradientBG 5s infinite ease-in-out;
 }

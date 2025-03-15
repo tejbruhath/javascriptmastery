@@ -131,3 +131,26 @@ document.querySelectorAll(".ripple-btn").forEach(button => {
 
     })
 })
+
+let factorNum = parseInt(document.getElementById("factor").textContent)
+let multiplierNum = parseInt(document.getElementById("multiplier").textContent)
+let resultBtn = document.getElementById("result")
+
+resultBtn.addEventListener("click",() => {
+
+    console.log(powCaluculate(factorNum,multiplierNum))
+
+})
+
+function powCaluculate(a, b){
+
+    let count = b;
+    if(b!=0){
+        a*a
+        b--
+        return(powCaluculate(a,b))
+    }else{
+        return a
+    }
+    
+}
