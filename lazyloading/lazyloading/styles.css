@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    text-align: center;
+    margin: 10px 0;
+}
+.container {
+    max-width: 1000px;
+    border: 1px solid black;
+    margin: 10px auto;
+
+}
+#loader{
+    display: flex;
+    width: 100px;
+    margin: 10px auto;
+}
+#spinner{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid grey;
+    border-top: 10px solid blue;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.post{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.post-number{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 15px;
+    min-width: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+.post-content{
+    flex: 1;
+}
+.post-title{
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.post-body{
+    color: #666;
+    line-height: 1.5;
+}
